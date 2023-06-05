@@ -6,9 +6,8 @@ import os
 import stat
 
 RefreshListScript = 'Refresh.sh'
-
 BashHeader = '#!/bin/bash\n'
-StreamString = 'moonlight stream -720 -app '
+StreamString = 'moonlight SETIP stream  -1080 -app '
 roms_directory = '/home/pi/RetroPie/roms/moonlight/'
 
 
