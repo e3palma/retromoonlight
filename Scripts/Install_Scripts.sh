@@ -11,6 +11,9 @@ mkdir -p /home/pi/RetroPie/roms/moonlight
 
 chmod a+x ./Scripts/Refresh.sh
 /bin/cp ./Scripts/Refresh.sh /home/pi/RetroPie/roms/moonlight/Refresh.sh
+read -p "Enter IP for Moonlight Host" IP
+echo $IP
+sed -i "s/SETIP/$IP/g" GenerateGamesList.py
 /bin/cp ./GenerateGamesList.py /home/pi/RetroPie/roms/moonlight/GenerateGamesList.py
 
 chmod 777 /home/pi/RetroPie/roms/moonlight
